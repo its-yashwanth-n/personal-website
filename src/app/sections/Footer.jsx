@@ -1,11 +1,11 @@
-import { Container, Typography } from '@mui/material';
 import React from 'react';
+import { Typography } from '@mui/material';
 
 const Footer = () => {
     return (
-        <Container id="footer" variant="footer">
+        <footer id="footer">
             <Typography>Built by Yashwanth Nagaraju</Typography>
-        </Container>
+        </footer>
     );
 };
 

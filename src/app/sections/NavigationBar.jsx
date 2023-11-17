@@ -3,9 +3,9 @@ import React from 'react';
 
 const NavigationBar = () => {
     return (
-        <div id="navigation-bar">
+        <header id="navigation-bar">
             <Typography>Navigation Bar</Typography>
-        </div>
+        </header>
     );
 };
 
