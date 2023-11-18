@@ -4,9 +4,9 @@ import NavigationBar from "./sections/NavigationBar";
 
 const author = "Yashwanth Nagaraju"
 
-export const metadata = {
+const metadata = {
   title: {
-    default: `Portfolio | ${author}`,
+    default: author,
   },
   creator: author,
   description: "Welcome to the personal portfolio of Yashwanth Nagaraju",
@@ -18,12 +18,7 @@ export const metadata = {
     "Frontend Developer",
     "Software Engineer",
     "Frontend Developer Portfolio"
-  ],
-  icons: {
-    icon: '/favicon.png',
-    shortcut: '/favicon.png',
-    apple: '/favicon.png',
-  },
+  ]
 };
 
 export default function RootLayout({ children }) {
