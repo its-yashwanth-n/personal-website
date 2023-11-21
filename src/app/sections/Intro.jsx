@@ -1,13 +1,13 @@
-import React from 'react';
-import { Section } from '@/styles/CommonStyles';
-import { Typography } from '@mui/material';
+import React from "react";
+import { Section } from "@/styles/CommonStyles";
+import { Typography } from "@mui/material";
 
 const Intro = () => {
-    return (
-        <Section>
-            <Typography>Intro</Typography>
-        </Section>
-    );
+  return (
+    <Section id="intro-section" name="intro">
+      <Typography>Intro</Typography>
+    </Section>
+  );
 };
 
 export default Intro;
