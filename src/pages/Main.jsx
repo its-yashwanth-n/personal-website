@@ -23,6 +23,4 @@ const Main = () => {
 
 export default Main;
 
-const MainContainer = styled(Container)`
-
-`;
+const MainContainer = styled(Container)``;

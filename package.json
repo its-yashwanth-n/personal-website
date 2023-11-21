@@ -11,21 +11,25 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "format": "prettier --write src/"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.18",
+    "hamburger-react": "^2.5.0",
     "next": "14.0.2",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-scroll": "^1.9.0"
   },
   "devDependencies": {
     "dotenv": "^16.3.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.2",
     "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
     "prettier": "^3.1.0",
     "spellchecker": "^3.7.1",
     "webpack-bundle-analyzer": "^4.10.0"
