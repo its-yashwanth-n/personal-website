@@ -1,11 +1,11 @@
 "use client";
-import styles from './page.module.css'
-import Main from '@/pages/Main'
+import styles from "./page.module.css";
+import Main from "@/pages/Main";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Main/>
+      <Main />
     </main>
-  )
+  );
 }
