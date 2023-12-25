@@ -1,6 +1,8 @@
+import ThemeContext from "./ThemeContext";
 import "./globals.css";
 import Footer from "./sections/Footer";
 import NavigationBar from "./sections/NavigationBar";
+import { handrawn, francois, oswald } from "@/styles/font";
 
 const author = "Yashwanth Nagaraju";
 
@@ -23,11 +25,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${handrawn.variable} ${francois.variable} ${oswald.variable}`}
+    >
       <body>
-        <NavigationBar />
-        {children}
-        <Footer />
+        <ThemeContext>
+          <NavigationBar />
+          {children}
+          <Footer />
+        </ThemeContext>
       </body>
     </html>
   );
