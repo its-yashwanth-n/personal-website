@@ -7,3 +7,13 @@ export const Section = styled(Element)`
   justify-content: center;
   align-items: center;
 `;
+
+// Logo Styles
+
+export const IconButton = styled.button`
+  z-index: 1;
+  background-color: transparent;
+  padding: 0%;
+  border: none;
+  cursor: pointer;
+`;
