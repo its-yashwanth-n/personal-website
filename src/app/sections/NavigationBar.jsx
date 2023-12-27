@@ -6,14 +6,12 @@ import {
   Box,
   Container,
   Hidden,
-  Typography,
   useMediaQuery,
   Slide,
 } from "@mui/material";
-import { NAV_ROUTES } from "@/utils/routes";
 import styled from "@emotion/styled";
 import Hamburger from "hamburger-react";
-import { ScrollLink } from "@/styles/CommonStyles";
+import NavLinks from "@/components/NavLinks";
 
 const NavigationBar = () => {
   const isMobile = !useMediaQuery("(min-width:900px)");
@@ -43,21 +41,7 @@ const NavigationBar = () => {
             id="navigation-text-box"
             sx={{ display: { xs: "none", md: "flex" }, gap: "1.5vw" }}
           >
-            {NAV_ROUTES.map((item) => (
-              <NavText key={item.id} fontSize={{ md: "24px", lg: "28px" }}>
-                <ScrollLink
-                  to={item.to}
-                  spy={true}
-                  smooth={true}
-                  onClick={handleDrawer}
-                  duration={500}
-                  tabIndex={1}
-                >
-                  {item.text}
-                  <Span>( )</Span>
-                </ScrollLink>
-              </NavText>
-            ))}
+            <NavLinks handleDrawer={handleDrawer} />
           </NavTextBox>
         </NavContainer>
       </NavBar>
@@ -71,21 +55,7 @@ const NavigationBar = () => {
         >
           <SideNav open={isDrawerOpen}>
             <MobileNav>
-              {NAV_ROUTES.map((item) => (
-                <NavText key={item.id} fontSize={{ xs: "2rem", sm: "1.75rem" }}>
-                  <ScrollLink
-                    to={item.to}
-                    spy={true}
-                    smooth={true}
-                    onClick={handleDrawer}
-                    duration={500}
-                    tabIndex={1}
-                  >
-                    {item.text}
-                    <Span>( )</Span>
-                  </ScrollLink>
-                </NavText>
-              ))}
+              <NavLinks handleDrawer={handleDrawer} />
             </MobileNav>
           </SideNav>
         </Slide>
@@ -152,19 +122,4 @@ const MobileNav = styled.nav`
   display: inline-flex;
   align-items: center;
   flex-direction: column;
-`;
-
-const NavText = styled(Typography)`
-  && {
-    cursor: pointer;
-    color: var(--grey-text);
-    font-family: var(--font-secondary);
-    &:hover {
-      color: var(--primary-color);
-    }
-  }
-`;
-
-const Span = styled.span`
-  color: var(--secondary-text-color);
 `;

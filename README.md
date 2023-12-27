@@ -20,7 +20,6 @@ Welcome to the repository for my personal portfolio website! This site showcases
 - style/description
 - feat/feature-description
 - fix/bug-description
-- refactor/description
 - release/description
 - generic/description
 
