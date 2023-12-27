@@ -1,11 +1,16 @@
 import styled from "@emotion/styled";
-import { Element } from "react-scroll";
+import { Element, Link } from "react-scroll";
 
 export const Section = styled(Element)`
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const ScrollLink = styled(Link)`
+  cursor: pointer;
+  text-decoration: none;
 `;
 
 // Logo Styles

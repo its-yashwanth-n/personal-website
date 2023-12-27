@@ -2,30 +2,38 @@
   /* light mode styles */
   --primary-text-color-light: #161513;
   --secondary-text-color-light: #5e3bee;
+  --grey-text-light: #5e636e;
+
   --primary-bg-color-light: #f2f1ef;
   --secondary-bg-color-light: #f2f1ef;
-  --grey-text-light: #5e636e;
+  --nav-bg-color-light: rgb(242, 241, 239, 0.8);
 
   /* dark mode styles */
   --primary-text-color-dark: #f5f5f5;
   --secondary-text-color-dark: #075fe4;
-  --primary-bg-color-dark: #15181c;
-  --secondary-bg-color-dark: #1a1e23;
   --grey-text-dark: #8596a3;
 
-  font-family: var(--font-primary);
+  --primary-bg-color-dark: #15181c;
+  --secondary-bg-color-dark: #1a1e23;
+  --nav-bg-color-dark: rgb(21, 24, 28, 0.8);
 }
 
 .light {
-  color: var(--primary-text-color-light);
-  background-color: var(--primary-bg-color-light);
+  --primary-color: var(--primary-text-color-light);
   --secondary-text-color: var(--secondary-text-color-light);
+  --grey-text: var(--grey-text-light);
+
+  background-color: var(--primary-bg-color-light);
   --secondary-bg-color: var(--secondary-bg-color-light);
+  --nav-bg-color: var(--nav-bg-color-light);
 }
 
 .dark {
-  color: var(--primary-text-color-dark);
-  background-color: var(--primary-bg-color-dark);
+  --primary-color: var(--primary-text-color-dark);
   --secondary-text-color: var(--secondary-text-color-dark);
-  --secondary-bg-color: var(var(--secondary-bg-color-dark));
+  --grey-text: var(--grey-text-dark);
+
+  background-color: var(--primary-bg-color-dark);
+  --secondary-bg-color: var(--secondary-bg-color-dark);
+  --nav-bg-color: var(--nav-bg-color-dark);
 }
