@@ -28,7 +28,7 @@ const NavigationBar = () => {
           <Logo isMobile={isMobile} />
           <Hidden mdUp>
             <Hamburger
-              color="var(--primary-color)"
+              color="var(--primary-text-color)"
               label="show menu"
               style={{ display: "flex-end", zIndex: 5 }}
               toggled={isDrawerOpen}

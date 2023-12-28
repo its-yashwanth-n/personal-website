@@ -39,7 +39,7 @@ const NavText = styled(Typography)`
     color: var(--grey-text);
     font-family: var(--font-secondary);
     &:hover {
-      color: var(--primary-color);
+      color: var(--primary-text-color);
     }
   }
 `;
