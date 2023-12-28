@@ -25,5 +25,5 @@ export default Logo;
 const LogoImage = styled.img`
   font-family: var(--font-logo);
   font-size: ${(props) => (props.isMobile ? "2.25rem" : "3.5rem")};
-  color: var(--primary-color);
+  color: var(--primary-text-color);
 `;

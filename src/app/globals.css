@@ -19,7 +19,7 @@
 }
 
 .light {
-  --primary-color: var(--primary-text-color-light);
+  --primary-text-color: var(--primary-text-color-light);
   --secondary-text-color: var(--secondary-text-color-light);
   --grey-text: var(--grey-text-light);
 
@@ -29,7 +29,7 @@
 }
 
 .dark {
-  --primary-color: var(--primary-text-color-dark);
+  --primary-text-color: var(--primary-text-color-dark);
   --secondary-text-color: var(--secondary-text-color-dark);
   --grey-text: var(--grey-text-dark);
 
