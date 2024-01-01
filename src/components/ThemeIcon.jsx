@@ -1,11 +1,9 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { FiSun, FiMoon } from "react-icons/fi";
 import { IconButton } from "@/styles/CommonStyles";
 
-export const ThemeIcon = ({ iconSize = 24 }) => {
+const ThemeIcon = ({ iconSize }) => {
   const { theme, setTheme } = useTheme();
 
   const [mounted, setMounted] = useState(false);
@@ -30,3 +28,5 @@ export const ThemeIcon = ({ iconSize = 24 }) => {
     </IconButton>
   );
 };
+
+export default ThemeIcon;

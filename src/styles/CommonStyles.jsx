@@ -9,6 +9,16 @@ export const Section = styled(Element)`
   align-items: center;
 `;
 
+export const IconDiv = styled.div`
+  @media (min-width: 900px) {
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    padding-bottom: 3.5vh;
+  }
+  display: none;
+`;
+
 //common style components for texts
 
 export const GeneralText = styled(Typography)`
@@ -21,6 +31,18 @@ export const GeneralText = styled(Typography)`
 `;
 
 // common style components for links and buttons
+
+export const IconList = styled.ul`
+  list-style-type: none;
+  padding-left: 0px;
+`;
+
+export const ListItems = styled.li`
+  &&& {
+    cursor: pointer;
+    padding: 40% 0%;
+  }
+`;
 
 export const ScrollLink = styled(Link)`
   cursor: pointer;

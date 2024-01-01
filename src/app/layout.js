@@ -1,8 +1,10 @@
 import ThemeContext from "./ThemeContext";
 import "./globals.css";
-import Footer from "./sections/Footer";
-import NavigationBar from "./sections/NavigationBar";
 import { handrawn, francois, oswald } from "@/styles/font";
+import NavigationBar from "./sections/NavigationBar";
+import Social from "./sections/Social";
+import Footer from "./sections/Footer";
+import Effect from "./sections/Effects";
 
 const author = "Yashwanth Nagaraju";
 
@@ -32,6 +34,8 @@ export default function RootLayout({ children }) {
       <body>
         <ThemeContext>
           <NavigationBar />
+          <Social />
+          <Effect />
           {children}
           <Footer />
         </ThemeContext>

@@ -12,6 +12,17 @@ import {
 import styled from "@emotion/styled";
 import Hamburger from "hamburger-react";
 import NavLinks from "@/components/NavLinks";
+import GenericIcon from "@/components/GenericIcon";
+import ThemeIcon from "@/components/ThemeIcon";
+import {
+  GITHUB_LABEL,
+  GITHUB_LINK,
+  LINKEDIN_LABEL,
+  LINKEDIN_LINK,
+  MOBILE_ICON_SIZE,
+  githubID,
+  linkedInID,
+} from "@/utils/constants";
 
 const NavigationBar = () => {
   const isMobile = !useMediaQuery("(min-width:900px)");
@@ -56,6 +67,22 @@ const NavigationBar = () => {
           <SideNav open={isDrawerOpen}>
             <MobileNav>
               <NavLinks handleDrawer={handleDrawer} />
+              <IconContainer id="mobile-icons-div">
+                <GenericIcon
+                  iconId={linkedInID}
+                  iconLink={LINKEDIN_LINK}
+                  iconSize={MOBILE_ICON_SIZE}
+                  ariaLabel={LINKEDIN_LABEL}
+                />
+                <GenericIcon
+                  iconId={githubID}
+                  iconLink={GITHUB_LINK}
+                  iconSize={MOBILE_ICON_SIZE}
+                  ariaLabel={GITHUB_LABEL}
+                />
+                <ThemeIcon iconSize={MOBILE_ICON_SIZE} />
+                {/* <SoundIcon iconSize={MOBILE_ICON_SIZE} /> */}
+              </IconContainer>
             </MobileNav>
           </SideNav>
         </Slide>
@@ -122,4 +149,12 @@ const MobileNav = styled.nav`
   display: inline-flex;
   align-items: center;
   flex-direction: column;
+`;
+
+const IconContainer = styled(Container)`
+  && {
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+  }
 `;
