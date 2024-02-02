@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 import { Element, Link } from "react-scroll";
+import { SlideInBtmAmt } from "./CommonAnimations";
 
 export const Section = styled(Element)`
   min-height: 100vh;
@@ -15,6 +16,8 @@ export const IconDiv = styled.div`
     position: fixed;
     bottom: 0px;
     padding-bottom: 3.5vh;
+    -webkit-animation: ${SlideInBtmAmt};
+    animation: ${SlideInBtmAmt};
   }
   display: none;
 `;

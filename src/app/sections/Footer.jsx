@@ -2,6 +2,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { GeneralText } from "@/styles/CommonStyles";
+import { SlideInBtmAmt } from "@/styles/CommonAnimations";
 
 const Footer = () => {
   return (
@@ -18,4 +19,6 @@ const StyledFooter = styled.footer`
   justify-content: center;
   max-width: 80%;
   margin: 0 auto;
+  -webkit-animation: ${SlideInBtmAmt};
+  animation: ${SlideInBtmAmt};
 `;

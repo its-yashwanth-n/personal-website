@@ -25,7 +25,6 @@ import {
 } from "@/utils/constants";
 
 const NavigationBar = () => {
-  const isMobile = !useMediaQuery("(min-width:900px)");
   const [isDrawerOpen, setDrawerOpen] = useState(false);
 
   const handleDrawer = () => {
@@ -36,7 +35,7 @@ const NavigationBar = () => {
     <React.Fragment>
       <NavBar id="navigation-bar" position="fixed" component="header">
         <NavContainer maxWidth="inherit">
-          <Logo isMobile={isMobile} />
+          <Logo />
           <Hidden mdUp>
             <Hamburger
               color="var(--primary-text-color)"
