@@ -4,10 +4,11 @@ import { NAV_ROUTES } from "@/utils/routes";
 import styled from "@emotion/styled";
 import { Typography } from "@mui/material";
 
-const NavLinks = ({ handleDrawer }) => (
+const NavLinks = ({ handleDrawer = () => {} }) => (
   <>
     {NAV_ROUTES.map((item) => (
       <NavText
+        onClick={handleDrawer}
         key={item.id}
         fontSize={{ xs: "2rem", sm: "1.75rem", md: "1.5rem", lg: "1.75rem" }}
       >
@@ -15,7 +16,6 @@ const NavLinks = ({ handleDrawer }) => (
           to={item.to}
           spy={true}
           smooth={true}
-          onClick={handleDrawer}
           duration={500}
           tabIndex={1}
         >
