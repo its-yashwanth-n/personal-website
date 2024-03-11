@@ -5,10 +5,8 @@ import { AppBar, Box, Container } from "@mui/material";
 import styled from "@emotion/styled";
 import NavLinks from "@/components/NavLinks";
 import { SideNav } from "./SideNav";
-import Hamburger from "hamburger-react";
 
 const NavigationBar = () => {
-  const [isDrawerOpen, setDrawerOpen] = useState(false);
   return (
     <React.Fragment>
       <NavBar id="navigation-bar" position="fixed" component="header">
@@ -20,14 +18,6 @@ const NavigationBar = () => {
           >
             <NavLinks />
           </NavTextBox>
-          <Hamburger
-            color="var(--primary-text-color)"
-            label="show menu"
-            toggled={isDrawerOpen}
-            toggle={setDrawerOpen}
-            duration={0.8}
-            size={24}
-          />
         </NavContainer>
         <SideNav />
       </NavBar>
